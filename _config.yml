@@ -3,9 +3,9 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: Kive军的Blog
+title: Kive军's Blog
 subtitle: ''
-description: ''
+description: '欲买桂花同载酒，终不似，少年游'
 keywords:
 author: Kive军
 language: zh-CN
@@ -44,12 +44,12 @@ post_asset_folder: false
 relative_link: false
 future: true
 syntax_highlighter: highlight.js
-highlight:
-  line_number: true
-  auto_detect: false
-  tab_replace: ''
-  wrap: true
-  hljs: false
+#highlight:
+#  line_number: true
+#  auto_detect: false
+#  tab_replace: ''
+#  wrap: true
+#  hljs: false
 prismjs:
   preprocess: true
   line_number: true
@@ -103,5 +103,16 @@ theme: butterfly
 deploy:
   type: git
   repo: https://github.com/kivejun/kivejun.github.io.git
+
+#  nav:
+#    # Navigation bar logo image
+##    logo: /xxxx.png
+#    display_title: true
+#    # Whether to fix navigation bar
+#    fixed: false
+
+
+
+
 
 

@@ -16,11 +16,17 @@ nav:
   # Whether to fix navigation bar
   fixed: false
 
+# Menu 目录
 menu:
-  # Home: / || fas fa-home
-  # List||fas fa-list:
-  #   Music: /music/ || fas fa-music
-  #   Movie: /movies/ || fas fa-video
+  首页: / || fas fa-home
+  归档: /archives/ || fas fa-archive
+  标签: /tags/ || fas fa-tags
+  目录: /categories/ || fas fa-folder-open
+  列表||fas fa-list:
+    音乐: /music/ || fas fa-music
+    电影: /movies/ || fas fa-
+  友情链接: /link/ || fas fa-link
+  关于我们: /about/ || fas fa-heart
 
 # --------------------------------------
 # Code Blocks Settings
@@ -28,18 +34,18 @@ menu:
 
 code_blocks:
   # Code block theme: darker / pale night / light / ocean / false
-  theme: light
-  macStyle: false
+  theme: darker
+  macStyle: true
   # Code block height limit (unit: px)
   height_limit: false
-  word_wrap: false
+  word_wrap: true
 
   # Toolbar
   copy: true
   language: true
   # true: shrink the code blocks | false: expand the code blocks | none: expand code blocks and hide the button
   shrink: false
-  fullpage: false
+  fullpage: true
 
 # Social media links
 # Formal:
@@ -52,23 +58,23 @@ social:
 # Image Settings
 # --------------------------------------
 
-favicon: /img/favicon.png
+favicon: img/avatar.jpg
 
 avatar:
-  img: /img/butterfly-icon.png
+  img: img/avatar.jpg
   effect: false
 
 # Disable all banner images
 disable_top_img: false
 
 # If the banner of page not setting, it will show the default_top_img
-default_top_img:
+default_top_img: img/top.jpg
 
 # The banner image of index page
-index_img:
+index_img: img/background.jpg
 
 # The banner image of archive page
-archive_img:
+archive_img: img/background.jpg
 
 # Note: tag page, not tags page
 tag_img:
@@ -79,7 +85,7 @@ tag_img:
 tag_per_img:
 
 # Note: category page, not categories page
-category_img:
+category_img: img/top.jpg
 
 # The banner image of category page, you can set the banner image for each category
 # Format:
@@ -87,11 +93,11 @@ category_img:
 category_per_img:
 
 # The background image of footer
-footer_img: false
+footer_img: true
 
 # Website Background
 # Can set it to color or image url
-background:
+background: img/background.jpg
 
 cover:
   # Disable the cover or not
@@ -99,7 +105,7 @@ cover:
   aside_enable: true
   archives_enable: true
   # When cover is not set, the default cover is displayed
-  default_cover:
+  default_cover: img/top.jpg
     # - xxx.jpg
 
 # Replace Broken Images
@@ -146,23 +152,28 @@ index_site_info_top:
 index_top_img_height:
 
 # The subtitle on homepage
+# 首页副标题
 subtitle:
-  enable: false
-  # Typewriter Effect
+  # 是否开启：true：开启，false：不开启
+  enable: true
+  # 打字效果
   effect: true
-  # Customize typed.js
+  # 定制 typed.js
   # https://github.com/mattboldt/typed.js/#customization
   typed_option:
-  # Source - Call the third-party service API (Chinese only)
-  # It will show the source first, then show the content of sub
-  # Choose: false/1/2/3
-  # false - disable the function
-  # 1 - hitokoto.cn
-  # 2 - https://api.aa1.cn/doc/yiyan.html
-  # 3 - jinrishici.com
+  # source 调用第三方服务
+  # source: false 关闭调用
+  # source: 1  调用一言网的一句话（简体） https://hitokoto.cn/
+  # source: 2  调用一句网（简体） https://yijuzhan.com/
+  # source: 3  调用今日诗词（简体） https://www.jinrishici.com/
+  # subtitle 会先显示 source , 再显示 sub 的内容
   source: false
-  # If you close the typewriter effect, the subtitle will only show the first line of sub
+  # 如果关闭打字效果，subtitle 只会显示 sub 的第一行文字
   sub:
+    - 你在抱怨什么呢
+    - 为明天到来的事，说人生像是没有意义
+    - 没有选择会是唯一的路
+    - 这不是你自己的问题，人终归要好好去生活
 
 # Article layout on the homepage
 # 1: Cover on the left, info on the right
@@ -199,10 +210,10 @@ toc:
 
 post_copyright:
   enable: true
-  decode: false
-  author_href:
+  decode: true
+  author_href: Kive军
   license: CC BY-NC-SA 4.0
-  license_url: https://creativecommons.org/licenses/by-nc-sa/4.0/
+  license_url: https://kivejun.github.io/
 
 # Sponsor/reward
 reward:
@@ -420,7 +431,7 @@ copy:
 
 # Need to install the hexo-wordcount plugin
 wordcount:
-  enable: false
+  enable: true
   # Display the word count of the article in post meta
   post_wordcount: true
   # Display the time to read the article in post meta
@@ -986,7 +997,7 @@ instantpage: false
 # Lazyload
 # https://github.com/verlok/vanilla-lazyload
 lazyload:
-  enable: false
+  enable: true
   # Specify the field to use lazyload (site or post)
   field: site
   placeholder:
@@ -1062,6 +1073,31 @@ CDN:
     # canvas_fluttering_ribbon:
     # canvas_nest:
     # canvas_ribbon:
+  # canvas_ribbon (静止彩带背景)
+  # 见: https://github.com/hustcc/ribbon.js
+  canvas_ribbon:
+    enable: false
+    size: 150
+    alpha: 0.6
+    zIndex: -1
+    click_to_change: false
+    mobile: false
+
+  # Fluttering Ribbon (动态彩带)
+  canvas_fluttering_ribbon:
+    enable: false
+    mobile: false
+
+  # canvas_nest
+  # https://github.com/hustcc/canvas-nest.js
+  canvas_nest:
+    enable: false
+    color: '0,0,255' # 线条的颜色，默认: '0,0,0'；RGB 值：(R,G,B)。（注意：用 ',' 分隔）
+    opacity: 0.7 # 线条的透明度 (0~1)，默认: 0.5
+    zIndex: -1 # 背景的 z-index 属性，默认: -1
+    count: 99 # 线条的数量，默认: 99
+    mobile: false
+
     # chartjs:
     # click_heart:
     # clickShowText:
@@ -1087,6 +1123,12 @@ CDN:
     # main_css:
     # mathjax:
     # medium_zoom:
+  # medium-zoom
+  # https://github.com/francoischalifour/medium-zoom
+  medium_zoom: false
+  # fancybox
+  # https://fancyapps.com/fancybox/
+  fancybox: true
     # mermaid:
     # meting_js:
     # prismjs_autoloader:
