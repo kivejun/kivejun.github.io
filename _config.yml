@@ -103,7 +103,7 @@ theme: butterfly
 deploy:
   type: git
   repo: https://github.com/kivejun/kivejun.github.io.git
-
+  branch: main
 #  nav:
 #    # Navigation bar logo image
 ##    logo: /xxxx.png
