@@ -18,15 +18,12 @@ nav:
 
 # Menu 目录
 menu:
+  Search: /search || fas fa-search
   首页: / || fas fa-home
   归档: /archives/ || fas fa-archive
   标签: /tags/ || fas fa-tags
   目录: /categories/ || fas fa-folder-open
-  列表||fas fa-list:
-    音乐: /music/ || fas fa-music
-    电影: /movies/ || fas fa-
   友情链接: /link/ || fas fa-link
-  关于我们: /about/ || fas fa-heart
 
 # --------------------------------------
 # Code Blocks Settings
@@ -68,13 +65,13 @@ avatar:
 disable_top_img: false
 
 # If the banner of page not setting, it will show the default_top_img
-default_top_img: img/top.jpg
+default_top_img: img/background.jpg
 
 # The banner image of index page
 index_img: img/background.jpg
 
 # The banner image of archive page
-archive_img: img/background.jpg
+archive_img:
 
 # Note: tag page, not tags page
 tag_img:
@@ -85,7 +82,7 @@ tag_img:
 tag_per_img:
 
 # Note: category page, not categories page
-category_img: img/top.jpg
+category_img:
 
 # The banner image of category page, you can set the banner image for each category
 # Format:
@@ -105,7 +102,7 @@ cover:
   aside_enable: true
   archives_enable: true
   # When cover is not set, the default cover is displayed
-  default_cover: img/top.jpg
+  default_cover: img/background.jpg
     # - xxx.jpg
 
 # Replace Broken Images
@@ -267,7 +264,7 @@ noticeOutdate:
 footer:
   owner:
     enable: true
-    since: 2019
+    since: 2025
   custom_text:
   # Copyright of theme and framework
   copyright: true
@@ -295,7 +292,7 @@ aside:
       enable: true
       icon: fab fa-github
       text: Follow Me
-      link: https://github.com/xxxxxx
+      link: https://github.com/kivejun
   card_announcement:
     enable: true
     content: This is my Blog
