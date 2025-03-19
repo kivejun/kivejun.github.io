@@ -1,8 +1,8 @@
 ---
-title: 友情链接
-date: 2018-06-07 22:17:49
+title: 友链
+date: 2025-03-18
 type: 'link'
-top_img: https://uy.wzznft.com/i/2025/03/18/rbphln.jpg
+top_img: https://i.postimg.cc/mD6tGXmD/top.jpg
 footer_img: true
 
 ---
