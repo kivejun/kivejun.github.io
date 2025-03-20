@@ -110,6 +110,18 @@ deploy:
 #    display_title: true
 #    # Whether to fix navigation bar
 #    fixed: false
+feed:
+  type: atom
+  path: atom.xml
+  limit: 20
+  hub:
+  content:
+  content_limit: 140
+  content_limit_delim: ' '
+  order_by: -date
+  icon: icon.png
+  autodiscovery: true
+  template:
 
 
 
