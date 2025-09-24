@@ -1,0 +1,41 @@
+/* 全局背景图片设置 */
+body {
+    /* 替换为你的图片路径（若图片在 source/img 下，路径为 /img/图片名） */
+    background-image: url('/img/background.jpg');
+    background-repeat: no-repeat; /* 不重复平铺 */
+    background-attachment: fixed; /* 固定背景，滚动时不移动 */
+    background-size: cover; /* 覆盖整个视口，保持比例 */
+    background-position: center; /* 图片居中显示 */
+    background-color: #f5f5f5; /* 备用背景色（图片加载失败时显示） */
+}
+
+/*!* 清除所有区块的背景色，设置为透明 *!*/
+/*#header, !* 头部导航栏 *!*/
+/*#page, !* 页面主体容器 *!*/
+/*.post-wrap, !* 文章卡片容器 *!*/
+/*.card, !* 侧边栏卡片、文章卡片 *!*/
+/*.footer, !* 底部栏（若未隐藏） *!*/
+/*.layout, !* 布局容器 *!*/
+/*.sidebar, !* 侧边栏 *!*/
+/*.content, !* 内容区 *!*/
+/*.comment-wrap !* 评论区容器 *! {*/
+/*    background: transparent !important; !* 强制透明，覆盖默认背景 *!*/
+/*    border: none !important; !* 去除边框（若有） *!*/
+/*    box-shadow: none !important; !* 去除阴影（避免区块边缘分割感） *!*/
+/*}*/
+
+/* 可选：调整文字颜色，确保在背景图上清晰可见 */
+/*!* 例如：设置全局文字为白色（根据你的背景图颜色调整） *!*/
+/*body,*/
+/*a,*/
+/*h1, h2, h3, h4, h5, h6,*/
+/*.post-title a,*/
+/*.menu-item a {*/
+/*    color: #fff !important; !* 白色文字，可根据背景图明暗调整 *!*/
+/*}*/
+
+/*!* 可选：若文章内容区文字不清晰，可给文字添加阴影 *!*/
+/*.post-content p,*/
+/*.post-content span {*/
+/*    text-shadow: 0 0 3px rgba(0, 0, 0, 0.5); !* 文字阴影，增强可读性 *!*/
+/*}*/
