@@ -1,7 +1,7 @@
 - class_name: 友情链接
   class_desc: 那些人，那些事
   link_list:
-    - name: MDLZCOOL1
+    - name: MDLZCOOL
       link: https://mdlzcool.github.io/
       avatar:
       descr: 快速、简单且强大的网志框架
