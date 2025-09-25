@@ -173,6 +173,9 @@ subtitle:
   sub:
     - 自小刺头深草里 &#44; 而今渐觉出蓬蒿
     - 时人不识凌云木 &#44; 直待凌云始道高
+    - 追赶日月 &#44; 不苟于山川
+    - 人生何处不迷雾 &#44; 东隅已逝 , 桑榆非晚
+    - 山林不向四季起誓言 &#44; 荣枯随缘
 # The subtitle on homepage
 ## 首页副标题
 #subtitle:
@@ -292,7 +295,10 @@ footer:
   copyright: true  # 是否显示版权信息
   powered: true    # 是否显示「由 Hexo & Butterfly 驱动」
   theme_v: true    # 是否显示主题版本
-  custom_text: ""  # 自定义底部文字（若有）
+  custom_text: "一切随风"  # 自定义底部文字（若有）
+  owner:
+    enable: true
+    since: 2024
 
 # --------------------------------------
 # Aside Settings
