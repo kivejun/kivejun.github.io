@@ -1,7 +1,7 @@
 /* 全局背景图片设置 */
 body {
     /* 替换为你的图片路径（若图片在 source/img 下，路径为 /img/图片名） */
-    background-image: url('/img/R-C.jpg');
+    background-image: url('/img/1.png');
     background-repeat: no-repeat; /* 不重复平铺 */
     background-attachment: fixed; /* 固定背景，滚动时不移动 */
     background-size: cover; /* 覆盖整个视口，保持比例 */
