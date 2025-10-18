@@ -7,7 +7,7 @@ categories: 强化学习
 
 ### 事例：火星探测车
 
-![image-20251018180111868](C:\Users\kive_JUN\AppData\Roaming\Typora\typora-user-images\image-20251018180111868.png)
+
 
 强化学习算法在决定如何采取下一步行动的关键要素：
 
@@ -15,7 +15,7 @@ categories: 强化学习
 
 ## 1.1、The return in the reinforcement learning
 
-![image-20251018205800254](C:\Users\kive_JUN\AppData\Roaming\Typora\typora-user-images\image-20251018205800254.png)
+
 
 存在折扣因子 $\gamma$ ，使得越早获得奖励使得总回报的价值更高
 
@@ -27,9 +27,7 @@ The return depends on the **actions** you take
 
 ## 1.2、Policies in reinforcement learning
 
-![image-20251018211157095](C:\Users\kive_JUN\AppData\Roaming\Typora\typora-user-images\image-20251018211157095.png)
 
-![image-20251018211534621](C:\Users\kive_JUN\AppData\Roaming\Typora\typora-user-images\image-20251018211534621.png)
 
 1、马尔科夫决策过程（MDP）
 
@@ -37,13 +35,13 @@ The return depends on the **actions** you take
 
   where you are now，not how you get here
 
-![image-20251018212049406](C:\Users\kive_JUN\AppData\Roaming\Typora\typora-user-images\image-20251018212049406.png)
+
 
 
 
 ## 2.1 状态动作价值函数
 
-![image-20251018212846423](C:\Users\kive_JUN\AppData\Roaming\Typora\typora-user-images\image-20251018212846423.png)
+
 
 $ Q_{(s,a)}=$ return if you [考虑自己当前的状态]
 
@@ -51,7 +49,7 @@ $ Q_{(s,a)}=$ return if you [考虑自己当前的状态]
 * take action a(once)
 * then behave optimally after that.
 
-![image-20251018213426126](C:\Users\kive_JUN\AppData\Roaming\Typora\typora-user-images\image-20251018213426126.png)
+
 
 当我处在state s 时，我需要计算在state s下各个动作$a_i$的状态动作价值函数，即$Q_{(s,a)}$，然后比较各个动作的Q函数的大小，取到最大值，即$max Q_{(s,a)}$ ，这样就找到了在state s下的最佳动作 a，得到最佳策略
 
@@ -59,17 +57,17 @@ $ Q_{(s,a)}=$ return if you [考虑自己当前的状态]
 
 [参量定义]
 
-![image-20251018215443357](C:\Users\kive_JUN\AppData\Roaming\Typora\typora-user-images\image-20251018215443357.png)
+
 
 贝尔曼方程：
 
 ## $ Q_{(s,a)}=R_{(s)}+\gamma \max_{a'}{Q_{(s',a')}}$
 
-![image-20251018221526034](C:\Users\kive_JUN\AppData\Roaming\Typora\typora-user-images\image-20251018221526034.png)
+
 
 相关解释：
 
-![image-20251018221930306](C:\Users\kive_JUN\AppData\Roaming\Typora\typora-user-images\image-20251018221930306.png)
+
 
 ### **当前状态的总回报=及时回报+$\gamma \cdot$下一状态最优策略的回报**
 
@@ -77,9 +75,7 @@ $ Q_{(s,a)}=$ return if you [考虑自己当前的状态]
 
 * 在执行action a 的时候，有概率执行action b，比如要求向左走，结果最后向右走，即向左走的概率为$p_1$，向右走的概率为$p_2$
 
-![image-20251018223410268](C:\Users\kive_JUN\AppData\Roaming\Typora\typora-user-images\image-20251018223410268.png)
 
-![image-20251018223538700](C:\Users\kive_JUN\AppData\Roaming\Typora\typora-user-images\image-20251018223538700.png)
 
 ### goal of reinforcement learning
 
