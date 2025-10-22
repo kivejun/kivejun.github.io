@@ -2,6 +2,7 @@
 title: NOTE：强化学习
 tags: reinforcement  learning
 categories: reinforcement  learning
+math: true
 ---
 # NOTE：强化学习
 
