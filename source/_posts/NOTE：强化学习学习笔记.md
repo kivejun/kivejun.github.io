@@ -7,7 +7,7 @@ categories: reinforcement  learning
 
 ## 事例引入：火星探测车
 
-![image-20251018180111868](source/img/RL/image-20251018180111868.png)
+![image-20251018180111868.png](../img/RL/image-20251018180111868.png)
 
 强化学习算法在决定如何采取下一步行动的关键要素：
 
@@ -15,7 +15,7 @@ categories: reinforcement  learning
 
 ## 1.1、The return in the reinforcement learning
 
-![image-20251018205800254](source/img/RL/image-20251018205800254.png)
+![image-20251018205800254.png](../img/RL/image-20251018205800254.png)
 
 存在折扣因子 $\gamma$ ，使得越早获得奖励使得总回报的价值更高
 
@@ -27,9 +27,9 @@ The return depends on the **actions** you take
 
 ## 1.2、Policies in reinforcement learning
 
-![image-20251018211157095](source/img/RL/image-20251018211157095.png)
+![image-20251018211157095.png](../img/RL/image-20251018211157095.png)
 
-![image-20251018211534621](source/img/RL/image-20251018211534621.png)
+![image-20251018211534621.png](../img/RL/image-20251018211534621.png)
 
 1、马尔科夫决策过程（MDP）
 
