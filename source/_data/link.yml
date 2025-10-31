@@ -7,6 +7,10 @@
       avatar: '/img/MDLZCOOL.jpg'
       descr: mdlzcool
 
+    - name: Sakura
+      link: https://sakurahoshi.github.io/
+      avatar: '/img/ljy.jpeg'
+      descr: Sakura
 #- class_name: 网站
 #  class_desc: 值得推荐的网站
 #  link_list:
