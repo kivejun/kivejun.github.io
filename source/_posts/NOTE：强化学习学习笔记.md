@@ -14,7 +14,7 @@ math: true
 
 * state（状态）、action（动作）、R(s) （奖励函数）、state' （下一个状态）
 
-## 1.1、The return in the reinforcement learning
+## The return in the reinforcement learning
 
 ![image-20251018205800254.png](../img/RL/image-20251018205800254.png)
 
@@ -26,7 +26,7 @@ The return depends on the **actions** you take
 
 
 
-## 1.2、Policies in reinforcement learning
+## Policies in reinforcement learning
 
 ![image-20251018211157095.png](../img/RL/image-20251018211157095.png)
 
@@ -42,7 +42,7 @@ The return depends on the **actions** you take
 
 
 
-## 2.1 状态动作价值函数
+## 状态动作价值函数
 
 ![image-20251018212846423.png](../img/RL/image-20251018212846423.png)
 
@@ -56,7 +56,7 @@ $ Q_{(s,a)}=$ return if you [考虑自己当前的状态]
 
 当我处在state s 时，我需要计算在state s下各个动作$a_i$的状态动作价值函数，即$Q_{(s,a)}$，然后比较各个动作的Q函数的大小，取到最大值，即$max Q_{(s,a)}$ ，这样就找到了在state s下的最佳动作 a，得到最佳策略
 
-## 2.2 贝尔曼方程
+## 贝尔曼方程
 
 [参量定义]
 
@@ -74,7 +74,7 @@ $ Q_{(s,a)}=$ return if you [考虑自己当前的状态]
 
  **当前状态的总回报=及时回报+$\gamma \cdot$下一状态最优策略的回报**
 
-## 2.3 随机环境强化学习
+## 随机环境强化学习
 
 * 在执行action a 的时候，有概率执行action b，比如要求向左走，结果最后向右走，即向左走的概率为$p_1$，向右走的概率为$p_2$
 
@@ -88,34 +88,34 @@ $ Q_{(s,a)}=$ return if you [考虑自己当前的状态]
 
 
 
-## 3.1 连续状态空间运用
+## 连续状态空间运用
 
 被控物体的状态量不是单一的离散之一，而是一个**数字向量** ，其中任何一个数字都可以有大量的可能值
 
 
 
-##  3.2 月球车着陆
+##  月球车着陆
 
-### 3.2.1 actions we should define：
+### actions we should define：
 
 * do nothing 
 * left thruster
 * main thruster
 * right thruster
 
-### 3.2.2 states we should define:
+### states we should define:
 
 ![image-20251019004025978.png](../img/RL/image-20251019004025978.png)
 
-### 3.2.3 the reward function:
+### the reward function:
 
 ![image-20251019004207770.png](../img/RL/image-20251019004207770.png)
 
-### 3.2.4 set the $\gamma$ 
+### set the $\gamma$ 
 
 we set the $\gamma$  as 0.985 
 
-## 3.3 状态值函数
+## 状态值函数
 
 ![image-20251019124443945.png](../img/RL/image-20251019124443945.png)
 
@@ -139,7 +139,7 @@ The question we meet : how do you train a neural network to compute
 * 训练神经网络，得到$Q_{new}$ ,使$Q_{new}(s,a)=y$ [  $f_{w,B}(x) \approx y$  ]
 * set the $Q=Q_{new}$ 
 
-## 3.4  Algorithm refinement ： Improved neutral network architecture
+## Algorithm refinement ： Improved neutral network architecture
 
 修改神经网络架构：
 
@@ -147,13 +147,13 @@ The question we meet : how do you train a neural network to compute
 
 
 
-## 3.5 Algorithm refinement : $\epsilon-greedy$ policy
+## Algorithm refinement : $\epsilon-greedy$ policy
 
 ![image-20251019171335958.png](../img/RL/image-20251019171335958.png)
 
 采用$\epsilon-greedy$ policy 可以有效避免由于随机初始化神经网络参数，导致某一种action从来不被考虑执行的情况，在开始阶段可以调大$\epsilon$ 的值，使动作的选择随机化，start $\epsilon$ high and gradually decrease 
 
-## 3.6 Algorithm refinement ：mini-batch and soft updates
+## Algorithm refinement ：mini-batch and soft updates
 
 
 
